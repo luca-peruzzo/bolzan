@@ -16,7 +16,7 @@ img {
 
 body {
     background-color: #fff;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header, nav, article, aside, section, footer, main, figure, figcaption {
@@ -97,6 +97,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* Global style */
+
+.background{
+    background-color: #fff;
+    background-image: url("../img/background.png");
+}
+
+.background h1, .background .button {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 /** Desktop, iPad Pro **/
 
