@@ -177,7 +177,7 @@ html {
 
 #aboutus {
     margin-top: 100px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 #aboutus h2,
@@ -205,13 +205,15 @@ html {
 }
 
 #attivita {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding: 50px 0;
     background-color: #f8f8f8;
 }
 
 #contatti {
     padding-top: 50px;
+}
+.footer{
+    background-color: #f8f8f8;
 }
 
 /** Desktop, iPad Pro **/
