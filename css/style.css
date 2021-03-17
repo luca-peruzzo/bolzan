@@ -126,6 +126,52 @@ a {
     height: 100px;
     margin-top: -100px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.img-spacer {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.img-spacer img {
+    width: 350px;
+}
+
+/*header*/
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+/*above the fold*/
+
+.background-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .background {
     background-color: rgba(0, 0, 0, 0.15);
     background-image: url("../img/background.png");
@@ -143,6 +189,7 @@ a {
     padding-top: 250px;
     padding-bottom: 75px;
 }
+
 .background .button {
     font-size: 40px;
     font-weight: 600;
@@ -155,37 +202,7 @@ a {
     margin: 0 auto 350px auto;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-.header {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100px;
-}
-
-.background-flex {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-    margin-left: 50px;
-}
-
-.header-flex {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
-}
+/*about us, attività, contatti*/
 
 .about-us {
     padding: 50px 0;
@@ -206,23 +223,21 @@ html {
     color: #222;
 }
 
-.img-spacer {
-    margin: 50px auto;
-    text-align: center;
-}
-
-.img-spacer img {
-    width: 350px;
-}
-
 .attivita {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
 
+.card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .contatti {
     padding-top: 50px;
 }
+
+/*footer*/
+
 .footer {
     background-color: #f8f8f8;
 }
