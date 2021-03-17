@@ -173,12 +173,14 @@ html {
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.75);
     background-image: url("../img/background.png");
     background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
     width: 100%;
     margin-bottom: 50px;
+    background-position: bottom;
 }
 
 .background h1 {
