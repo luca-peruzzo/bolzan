@@ -116,7 +116,7 @@ a {
 /* Global style */
 
 .background {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.15);
     background-image: url("../img/background.png");
     background-size: cover;
     height: auto;
