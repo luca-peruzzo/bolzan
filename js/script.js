@@ -1,6 +1,6 @@
 
 window.onload = () => {
-    this.resizeHeader();
+    this.resizeHeaderAndFooter();
     document.querySelector('.button').addEventListener('click', () => { this.scrollDown() });
 }
 scrollDown = () => {
@@ -8,18 +8,18 @@ scrollDown = () => {
     window.scrollTo({ behavior: 'smooth', top: background.clientHeight - 50 })
 }
 window.onresize = () => {
-    this.resizeHeader();
+    this.resizeHeaderAndFooter();
 }
 toggleMenu = () => {
     document.querySelector('.burger-menu').classList.toggle("change");
     document.querySelector('.menu').classList.toggle('hide');
 }
-resizeHeader = () => {
+resizeHeaderAndFooter = () => {
     if (window.innerWidth < 1024) {
-        document.querySelector('.mobile').classList.remove('hide');
-        document.querySelector('.desktop').classList.add('hide');
+        document.querySelectorAll('.mobile').forEach(el => { el.classList.remove('hide'); });
+        document.querySelectorAll('.desktop').forEach(el => { el.classList.add('hide'); });
     } else {
-        document.querySelector('.mobile').classList.add('hide');
-        document.querySelector('.desktop').classList.remove('hide');
+        document.querySelectorAll('.mobile').forEach(el => { el.classList.add('hide'); });
+        document.querySelectorAll('.desktop').forEach(el => { el.classList.remove('hide'); });
     }
 }
