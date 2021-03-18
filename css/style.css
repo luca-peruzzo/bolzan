@@ -140,14 +140,11 @@ html {
     width: 350px;
 }
 
-/*header*/
-
-.header-flex {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
+.hide {
+    display: none!important;
 }
+
+/*header*/
 
 .header {
     position: fixed;
@@ -157,12 +154,71 @@ html {
     z-index: 999;
 }
 
+.header .content {
+    height: 100%;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
 .nav a {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
     margin-left: 50px;
+}
+
+.burger-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-10px, 5px);
+    transform: rotate(-45deg) translate(-10px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -5px);
+    transform: rotate(45deg) translate(-9px, -5px);
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu ul li{
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li:hover a{
+    text-decoration: underline;
 }
 
 /*above the fold*/
