@@ -168,7 +168,7 @@ html {
 .nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin-left: 50px;
 }
@@ -271,6 +271,15 @@ html {
     padding: 50px 0;
 }
 
+.about-us .col-4 {
+    text-align: center;
+}
+
+.about-us img {
+    max-width: 95%;
+    height: auto;
+}
+
 .about-us h2,
 .attivita h2,
 .contatti h2 {
@@ -366,7 +375,7 @@ html {
 }
 
 .headquarter a {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     color: #3a33ff;
     text-decoration: none;
@@ -381,13 +390,13 @@ html {
 }
 
 .contacts p {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     color: #222;
 }
 
 .contacts a {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     color: #3a33ff;
     text-decoration: none;
@@ -434,7 +443,7 @@ html {
 
 /** Desktop, iPad Pro **/
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
     .content {
         margin: 0 2%;
         width: 96%;
@@ -443,16 +452,24 @@ html {
 
 /** Display 12", iPad Pro Portrait, iPad landscape **/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
     .content {
         margin: 0 2%;
         width: 96%;
+    }
+    .flexbox {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .card {
+        margin-top: 15px;
     }
 }
 
 /** iPad Portrait, smartphone **/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .col-1,
     .col-2,
     .col-3,
@@ -462,6 +479,13 @@ html {
     .col-10 {
         float: none;
         width: 100%;
+    }
+    .background .button {
+        padding: 20px 70px;
+        font-size: 30px;
+    }
+    .background h1 {
+        font-size: 36px;
     }
 }
 
