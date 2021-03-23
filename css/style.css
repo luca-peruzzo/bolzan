@@ -141,7 +141,7 @@ html {
 }
 
 .hide {
-    display: none!important;
+    display: none !important;
 }
 
 /*header*/
@@ -173,7 +173,7 @@ html {
     margin-left: 50px;
 }
 
-.nav a:hover{
+.nav a:hover {
     text-decoration: underline;
 }
 
@@ -206,22 +206,22 @@ html {
     transform: rotate(45deg) translate(-9px, -5px);
 }
 
-.menu{
+.menu {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.menu ul li{
+.menu ul li {
     list-style-type: none;
     font-size: 22px;
     font-weight: 600;
     text-align: center;
     padding: 10px 0;
 }
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-.menu ul li:hover a{
+.menu ul li:hover a {
     text-decoration: underline;
 }
 
@@ -305,10 +305,9 @@ html {
     background-color: #f8f8f8;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: -30px;
+.card-container {
+    width: 33.3333%;
+    float: left;
 }
 
 .card {
@@ -320,44 +319,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 15px auto;
 }
 
-#card-1,
-#card-2,
-#card-6,
-#card-7 {
-    z-index: 2;
-}
-
-#card-3,
-#card-5 {
-    z-index: 1;
-}
-
-#card-4 {
-    z-index: 3;
-}
-
-#card-1:hover,
-#card-2:hover,
-#card-3:hover,
-#card-4:hover,
-#card-5:hover,
-#card-6:hover,
-#card-7:hover {
-    animation: z-index-animation 0.5s ease-out 10ms;
-    animation-fill-mode: forwards;
-}
-@keyframes z-index-animation {
-    0% {
-        z-index: 4;
-        background-color: #fff;
-    }
-    100% {
-        z-index: 4;
-        background-color: #fff8a9;
-    }
-}
 .contatti {
     padding-top: 50px;
 }
@@ -443,7 +407,7 @@ html {
 
 /** Desktop, iPad Pro **/
 
-@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
     .content {
         margin: 0 2%;
         width: 96%;
@@ -452,24 +416,19 @@ html {
 
 /** Display 12", iPad Pro Portrait, iPad landscape **/
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
     .content {
         margin: 0 2%;
         width: 96%;
     }
-    .flexbox {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    .card {
-        margin-top: 15px;
+    .card-container {
+        width: 50%;
     }
 }
 
 /** iPad Portrait, smartphone **/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .col-1,
     .col-2,
     .col-3,
@@ -486,6 +445,10 @@ html {
     }
     .background h1 {
         font-size: 36px;
+    }
+    .card-container {
+        width: 100%;
+        float: none;
     }
 }
 
