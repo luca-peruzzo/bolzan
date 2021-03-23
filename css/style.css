@@ -116,8 +116,8 @@ a {
 /* Global style */
 
 /* fix per smooth scroll con header position fixed */
-#about-us::before,
-#attivita::before,
+#studio::before,
+#competenze::before,
 #contatti::before {
     content: "";
     display: block;
@@ -169,8 +169,8 @@ html {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    font-weight: 600;
-    margin-left: 50px;
+    font-weight: 400;
+    margin-left: 35px;
 }
 
 .nav a:hover {
@@ -267,21 +267,23 @@ html {
 
 /*about us, attività, contatti*/
 
-.about-us {
+.studio {
     padding: 50px 0;
 }
 
-.about-us .col-4 {
+.studio .profilo {
     text-align: center;
+    padding: 0 25px;
 }
 
-.about-us img {
-    max-width: 95%;
+.studio img {
+    max-width: 960px;
+    width: 100%;
     height: auto;
 }
 
-.about-us h2,
-.attivita h2,
+.studio h2,
+.competenze h2,
 .contatti h2 {
     text-align: center;
     font-size: 40px;
@@ -290,7 +292,7 @@ html {
     margin-bottom: 50px;
 }
 
-.attivita h2 {
+.competenze h2 {
     margin-bottom: 80px;
 }
 
@@ -300,7 +302,7 @@ html {
     color: #222;
 }
 
-.attivita {
+.competenze {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
@@ -312,14 +314,28 @@ html {
 
 .card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    height: 350px;
+    width: 325px;
+    height: 400px;
     background-color: #fff;
     padding: 60px 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin: 15px auto;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 38px;
+}
+
+.card h3.long-title {
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .contatti {
@@ -339,35 +355,30 @@ html {
 }
 
 .headquarter a {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
     color: #3a33ff;
     text-decoration: none;
+    display: block;
 }
 
 .headquarter a:hover {
     text-decoration: underline;
 }
 
-.contacts {
-    text-align: center;
-}
-
-.contacts p {
-    font-size: 28px;
+.headquarter p {
+    font-size: 26px;
     font-weight: 400;
     color: #222;
+    margin-bottom: 25px;
 }
 
-.contacts a {
-    font-size: 28px;
-    font-weight: 400;
-    color: #3a33ff;
-    text-decoration: none;
+.headquarter p a {
+    display: inline;
 }
 
-.contacts a:hover {
-    text-decoration: underline;
+.margin-sede {
+    margin-top: 25px;
 }
 
 /*footer*/
@@ -412,6 +423,17 @@ html {
         margin: 0 2%;
         width: 96%;
     }
+
+    .col-6.profilo,
+    .col-6.descrizione {
+        width: 100%;
+        float: none;
+    }
+
+    .description {
+        max-width: 960px;
+        margin: 25px auto 0;
+    }
 }
 
 /** Display 12", iPad Pro Portrait, iPad landscape **/
@@ -424,11 +446,22 @@ html {
     .card-container {
         width: 50%;
     }
+
+    .col-6.profilo,
+    .col-6.descrizione {
+        width: 100%;
+        float: none;
+    }
+
+    .description {
+        max-width: 960px;
+        margin: 25px auto 0;
+    }
 }
 
 /** iPad Portrait, smartphone **/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .col-1,
     .col-2,
     .col-3,
@@ -449,6 +482,10 @@ html {
     .card-container {
         width: 100%;
         float: none;
+    }
+    .headquarter a,
+    .headquarter p {
+        font-size: 22px;
     }
 }
 
