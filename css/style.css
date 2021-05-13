@@ -16,7 +16,7 @@ img {
 
 body {
     background-color: #fff;
-    font-family: "Canela";
+    font-family: "Montserrat", sans-serif;
 }
 
 header,
@@ -240,7 +240,7 @@ html {
 
 .background {
     background-color: rgba(0, 0, 0, 0.75);
-    background-image: url("../img/background.png");
+    background-image: url("../img/SPIRALE.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -323,6 +323,67 @@ html {
 .competenze {
     padding: 50px 0;
     background-color: #f8f8f8;
+}
+.flip-card {
+    background-color: transparent;
+    width: 33.33333%;
+    float: left;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 275px;
+    height: 350px;
+    background-color: #e7e8e9;
+    padding: 30px 25px;
+    flex-direction: column;
+    margin: 15px auto;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    color: black;
+    left: 0px;
+    text-align: center;
+}
+
+.flip-card-front h3 {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.flip-card-front .long-title {
+    margin-bottom: 30px !important;
+}
+
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: transparent;
+    transform: rotateY(180deg);
+    left: 0px;
+    top: 0px;
+}
+
+.flip-card-back p {
+    font-size: 16px;
+    padding: 35px;
 }
 
 .card-container {
@@ -469,7 +530,7 @@ html {
         margin: 0 2%;
         width: 96%;
     }
-    .card-container {
+    .flip-card {
         width: 50%;
     }
 
@@ -509,7 +570,7 @@ html {
     .background h1 {
         font-size: 36px;
     }
-    .card-container {
+    .flip-card {
         width: 100%;
         float: none;
     }
