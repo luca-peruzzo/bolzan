@@ -25,10 +25,10 @@
                     <nav>
                         <!--Font-size 15px font family canela, più sottile come studio legale-->
                         <div class="nav">
-                            <a href="index.html">HOME</a>
-                            <a href="#studio">LO STUDIO</a>
-                            <a href="#competenze">COMPETENZE</a>
-                            <a href="#contatti">CONTATTI</a>
+                            <a href="index.html">Home</a>
+                            <a href="#studio">Lo Studio</a> <!--linea continua sotto ogni sezione-->
+                            <a href="#areediattivita">Aree di Attività</a>
+                            <a href="#contatti">Contatti</a>
                         </div>
                     </nav>
                 </div>
@@ -47,10 +47,10 @@
             <div class="menu hide">
                 <div class="content">
                     <ul>
-                        <li onclick="toggleMenu()"><a href="index.html">HOME</a></li>
-                        <li onclick="toggleMenu()"><a href="#studio">LO STUDIO</a></li>
-                        <li onclick="toggleMenu()"><a href="#competenze">COMPETENZE</a></li>
-                        <li onclick="toggleMenu()"><a href="#contatti">CONTATTI</a></li>
+                        <li onclick="toggleMenu()"><a href="index.html">Home</a></li>
+                        <li onclick="toggleMenu()"><a href="#studio">Lo Studio</a></li>
+                        <li onclick="toggleMenu()"><a href="#areediattivita">Aree di Attività</a></li>
+                        <li onclick="toggleMenu()"><a href="#contatti">Contatti</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,12 +68,12 @@
     <article id="studio">
         <div class="studio">
             <div class="content">
-                <h2>LO STUDIO</h2>
+                <h2>Lo Studio</h2>
                 <div class="studio-container">
                     <div class="profilo">
                         <img src="img/cavallo.jpg" alt="foto profilo">
                     </div>
-                    <!--colonna da 40% di larghezza tutto centrato vedi sito belex per mettere competenze al posto delle foto in rettangoli non speculari-->
+                    <!--colonna da 40% di larghezza tutto centrato vedi sito belex per mettere areediattivita al posto delle foto in rettangoli non speculari-->
                     <div class="descrizione">
                         <p class="description">BOLZAN Studio Legale, fondato nel 2019 dall’Avv. Gianluca Bolzan, con
                             sede a Padova e Conegliano, è una boutique legale specializzata nell’ambito della consulenza
@@ -98,11 +98,11 @@
         </div>
     </article>
 
-    <article id="competenze">
-        <div class="competenze">
-            <!-- anche competenze con stesso font di studio legale (sottile)-->
+    <article id="areediattivita">
+        <div class="areediattivita">
+            <!-- anche areediattivita con stesso font di studio legale (sottile)-->
             <div class="content">
-                <h2>COMPETENZE</h2>
+                <h2>Aree di Attività</h2>
                 <div class="clearfix">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -125,7 +125,7 @@
                                 <img src="img/foto_2.png" alt="foto2" style="width:180px;height:180px;">
                             </div>
                             <div class="flip-card-back">
-                                <p>Assistenza alle imprese in tutte le fasi dell’operazione immobiliare di
+                                <p>Assistenza alle imprese in tutte le fasi dell’operazione immobiliare di <br>
                                     efficientamento energetico: dalla fase programmatoria al finanziamento
                                     dell’intervento edilizio, dalla fase esecutiva sino all’ottenimento
                                     dell’agevolazione fiscale (accordi quadro con partners finanziari e assicurativi;
@@ -255,29 +255,35 @@
     <article id="contatti">
         <div class="contatti">
             <div class="content">
-                <h2>CONTATTI</h2>
+                <h2>Contatti</h2>
                 <div class="clearfix">
-                    <div class="col-6">
+                    <div class="col-4">
                         <div class="headquarter">
                             <h3>SEDI</h3>
-                            <a href="https://goo.gl/maps/KvgdECES8LXUZ4YQ8" target="_blank">Padova</a>
-                            <a class="margin-sede" href="https://goo.gl/maps/KGV1EvYRXVKBLGhA6" target="_blank">Vittorio
-                                Veneto</a>
+                            <a href="https://goo.gl/maps/KvgdECES8LXUZ4YQ8" target="_blank">Via Beato Pellegrino, 94 <br> 35137, Padova (PD)</a>
+                            <a class="margin-sede" href="https://goo.gl/maps/KGV1EvYRXVKBLGhA6" target="_blank">Via Verdi, 75 <br> 31015, Conegliano (TV)</a>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
+                        <div class="headquarter">
+                            <h3>TELEFONO</h3>
+                            <p>
+                            <a href="tel:+3904381641115" target="_blank">+39 0438 1641115</a>
+                            </p>
+                            <h3 id="fax">FAX</h3>
+                            <p>
+                            <a href="fax:+3904381890106" target="_blank">+39 0438 1890106</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
                         <div class="headquarter">
                             <!--meno spazio tra i recapiti, recapiti e sedi più piccolo e sempre stesso font
                             margin-bottom: 0 ! solo scritta padova e conegliano-->
-                            <h3>RECAPITI</h3>
+                            <h3>MAIL</h3>
+                            
                             <p>
-                                Tel: <a href="tel:+3904381641115" target="_blank">+39 0438 1641115</a>
-                            </p>
-                            <p>
-                                Fax: <a href="fax:+3904381890106" target="_blank">+39 0438 1890106</a>
-                            </p>
-                            <p>
-                                Email: <a href="mailto:info@studiobolzan.it" target="_blank">info@studiobolzan.it</a>
+                            <a href="mailto:info@studiobolzan.it" target="_blank">info@studiobolzan.it</a>
                             </p>
                         </div>
                     </div>
