@@ -422,6 +422,7 @@ html {
     left: 0px;
     top: 0px;
     color: #222;
+    z-index: 10;
 }
 
 .flip-card-back p {
