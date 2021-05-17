@@ -415,7 +415,6 @@ html {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: transparent;
     transform: rotateY(180deg);
     left: 0px;
     top: 0px;
