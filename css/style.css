@@ -384,6 +384,10 @@ html {
     transform: rotateY(180deg);
 }
 
+.flip-card-rotate-mobile {
+    transform: rotateY(180deg) !important;
+}
+
 .flip-card-front {
     position: absolute;
     width: 100%;
@@ -584,13 +588,9 @@ html {
         padding: 0;
     }
 
-    .flip-card:hover .flip-card:active .flip-card-inner {
-        transform: rotateY(180deg);
+    .flip-card:hover .flip-card-inner {
+        transform: unset;
     }
-
-    /* .flip-card: .flip-card-inner {
-        transform: rotateY(180deg);
-    } */
 
     .description {
         max-width: 960px;
@@ -607,6 +607,10 @@ html {
     }
     .flip-card {
         width: 50%;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: unset;
     }
 
     .studio-container .profilo,
@@ -648,6 +652,10 @@ html {
     .flip-card {
         width: 100%;
         float: none;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: unset;
     }
     .headquarter a,
     .headquarter p {

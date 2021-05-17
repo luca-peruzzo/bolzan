@@ -23,3 +23,17 @@ resizeHeaderAndFooter = () => {
         document.querySelectorAll('.desktop').forEach(el => { el.classList.remove('hide'); });
     }
 }
+
+rotateCardMobile = (id) => {
+    if (window.innerWidth < 1025) {
+        let currentCard = document.querySelector(id);
+        if (currentCard.classList.contains('flip-card-rotate-mobile')) {
+            currentCard.classList.remove("flip-card-rotate-mobile");
+        } else {
+            document.querySelectorAll('.flip-card-inner').forEach(el => {
+                if (el.classList.contains('flip-card-rotate-mobile')) { el.classList.remove('flip-card-rotate-mobile'); }
+            });
+            currentCard.classList.add('flip-card-rotate-mobile');
+        }
+    }
+}
