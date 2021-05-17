@@ -419,6 +419,7 @@ html {
     transform: rotateY(180deg);
     left: 0px;
     top: 0px;
+    color: #222;
 }
 
 .flip-card-back p {
