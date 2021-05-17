@@ -365,6 +365,7 @@ html {
     width: 33.33333%;
     float: left;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
 }
 
 .flip-card-inner {
