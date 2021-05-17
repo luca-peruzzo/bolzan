@@ -92,7 +92,6 @@ figcaption {
     padding: 20px 0;
 }
 
-
 .responsive,
 .responsive img {
     height: auto;
@@ -330,7 +329,6 @@ html {
     font-family: "Canela";
 }
 
-
 .studio .heading-line,
 .areediattivita .heading-line,
 .contatti .heading-line {
@@ -346,7 +344,6 @@ html {
     margin: 0px auto;
 }
 
-
 .description {
     font-size: 16px;
     font-weight: 300;
@@ -358,7 +355,6 @@ html {
     padding: 50px 0;
     background-color: rgba(0, 85, 119, 255);
 }
-
 
 .areediattivita .heading-line {
     border-color: #fff !important;
@@ -510,6 +506,22 @@ html {
 
 .margin-sede {
     margin-top: 25px;
+}
+
+.policy {
+    padding-top: 150px;
+}
+
+.policy h2 {
+    margin-bottom: 20px;
+}
+.policy p {
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+.policy a {
+    text-decoration: none;
 }
 
 /*footer*/
