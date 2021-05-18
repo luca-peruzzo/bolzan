@@ -402,6 +402,7 @@ html {
     color: black;
     left: 0px;
     text-align: center;
+    z-index: 10;
 }
 
 .flip-card-front h3 {
@@ -424,7 +425,8 @@ html {
     left: 0px;
     top: 0px;
     color: #222;
-    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .flip-card-back p {
