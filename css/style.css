@@ -425,8 +425,6 @@ html {
     left: 0px;
     top: 0px;
     color: #222;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .flip-card-back p {
