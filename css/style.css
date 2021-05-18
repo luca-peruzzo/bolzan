@@ -389,6 +389,7 @@ html {
 
 .flip-card-rotate-mobile {
     transform: rotateY(180deg) !important;
+    -webkit-transform: rotateY(180deg) !important;
 }
 
 .flip-card-front {
@@ -419,6 +420,7 @@ html {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     left: 0px;
     top: 0px;
     color: #222;
