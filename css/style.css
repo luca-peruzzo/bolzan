@@ -662,6 +662,10 @@ html {
         float: none;
     }
 
+    .flip-card-inner {
+        height: 360px;
+    }
+
     .flip-card:hover .flip-card-inner {
         transform: unset;
     }
