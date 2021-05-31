@@ -110,92 +110,58 @@
                 <div class="spacer"><span class="heading-line"></span>
                 </div>
                 <div class="clearfix">
-                    <div onclick="rotateCardMobile('#card1')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card1" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3 class="long-title">CONTRATTUALISTICA D'IMPRESA</h3>
                                 <img src="img/foto_1.png" alt="foto1" style="width:180px;height:180px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Formalizzazione dei rapporti commerciali tra imprese ed assistenza al Cliente dalla
-                                    fase di trattativa pre-negoziale sino alla redazione del documento contrattuale
-                                    (condizioni generali di vendita/acquisto; locazione e affitto di ramo d’azienda;
-                                    compravendita; contratti di rete; joint venture; fornitura e sub-fornitura).</p>
+                                <h4 onclick="openModal('#card1')">SCOPRI</h4>
                             </div>
                         </div>
                     </div>
-                    <div onclick="rotateCardMobile('#card2')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card2" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>ENERGY & REAL ESTATE</h3>
                                 <img src="img/foto_2.png" alt="foto2" style="width:180px;height:180px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Assistenza alle imprese in tutte le fasi dell’operazione immobiliare di <br>
-                                    efficientamento energetico: dalla fase programmatoria al finanziamento
-                                    dell’intervento edilizio, dalla fase esecutiva sino all’ottenimento
-                                    dell’agevolazione fiscale (accordi quadro con partners finanziari e assicurativi;
-                                    contratti d’appalto e sub-appalto; contratti di cessione del credito d’imposta;
-                                    conferimenti d’incarico progettuale).</p>
+                                <h4 onclick="openModal('#card2')">SCOPRI</h4>
                             </div>
                         </div>
                     </div>
-                    <div onclick="rotateCardMobile('#card3')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card3" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>DIRITTO SOCIETARIO</h3>
                                 <img src="img/foto_3.png" alt="foto3" style="width:180px;height:180px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Consulenza in materia societaria in fase di strutturazione della società e dei
-                                    rapporti interni tra soci (negoziazione e redazione dello statuto; patti
-                                    parasociali; costituzione di New-Co e cessione di quote sociali), ovvero di
-                                    associazioni e consorzi d’imprese, ivi compresa la regolamentazione contrattuale
-                                    interna.</p>
+                                <h4 onclick="openModal('#card3')">SCOPRI</h4>
                             </div>
                         </div>
                     </div>
-                    <div onclick="rotateCardMobile('#card4')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card4" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3 class="long-title">DIRITTO FALLIMENTARE E CONCORSUALE</h3>
                                 <img src="img/foto_4.png" alt="foto4" style="width:180px;height:180px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Assistenza alle imprese nell'ambito delle procedure fallimentari e concorsuali: dalla
-                                    valutazione preventiva sulla fattibilità dell’accordo di ristrutturazione del debito
-                                    o del piano concordatario alla redazione della relativa domanda, oltre alle
-                                    consequenziali comunicazioni e istanze al Tribunale e agli Organi della procedura.
-                                </p>
+                                <h4 onclick="openModal('#card4')">SCOPRI</h4>
                             </div>
                         </div>
                     </div>
-                    <div onclick="rotateCardMobile('#card5')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card5" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>DIRITTO INDUSTRIALE</h3>
                                 <img src="img/foto_5.png" alt="foto5" style="width:180px;height:180px;">
+                                <h4 onclick="openModal('#card5')">SCOPRI</h4>
                             </div>
-                            <div class="flip-card-back">
-                                <p>Tutela e valorizzazione degli assets immateriali (marchi, brevetti e segreti
-                                    commerciali), sia in fase stragiudiziale (contratti di licenza e trasferimento di
-                                    marchi e brevetti, accordi di co-branding e franchising), sia in fase giudiziale
-                                    avanti le Sezioni Specializzate (procedimenti cautelari e di merito in materia di
-                                    proprietà intellettuale e diritto industriale).</p>
-                            </div>
+
                         </div>
                     </div>
-                    <div onclick="rotateCardMobile('#card6')" class="flip-card">
+                    <div class="flip-card">
                         <div id="card6" class="flip-card-inner">
                             <div class="flip-card-front">
                                 <h3>IT E PRIVACY</h3>
                                 <img src="img/foto_6.png" alt="foto6" style="width:180px;height:180px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Adeguamento alla normativa vigente (analisi dell’organigramma societario e
-                                    adempimenti per le figure di riferimento; redazione informative; progettazione di un
-                                    sistema di gestione privacy efficiente e sua implementazione), nonché assistenza in
-                                    fase di contezioso avanti il Garante Privacy.</p>
+                                <h4 onclick="openModal('#card6')">SCOPRI</h4>
                             </div>
                         </div>
                     </div>
@@ -265,6 +231,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="modal-img"></div>
+        </div>
+
+    </div>
     <script src="js/script.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
